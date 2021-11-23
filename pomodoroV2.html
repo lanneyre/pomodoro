@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pomodoro</title>
+</head>
+<body>
+	<label for="input">Temps en minutes</label><br />
+	<input type="text" name="compteur" class="input" id="input" value="25">
+	<input type="button" name="plus" id="plus" value="+">
+	<input type="button" name="moins" id="moins" value="-">
+	<fieldset>
+		<legend id="legend">Pomodoro</legend>
+		<div id="decompte">25:00</div>
+		<input type="button" name="start" id="start" value="Start">
+		<input type="button" name="pause" id="pause" value="Pause" disabled="">
+		<input type="button" name="reset" id="reset" value="Reset">
+	</fieldset>
+	<script type="text/javascript" src="pomodoroV2.js"></script>
+</body>
+</html>

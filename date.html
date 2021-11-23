@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Le temps en JS</title>
+    </head>
+ 
+    <body>
+    	<h1>Le temps en JS</h1>
+    	<ul>
+        <script type="text/javascript">
+        	var d = new Date();
+        	document.write("<li><strong>new Date()</strong> = "+d+"<br>&nbsp;</li>");
+            d = new Date("2018-04-16");
+            document.write("<li><strong>new Date(\"2018-04-16\")</strong> = "+d+"<br>&nbsp;</li>");
+            d = new Date("2018/04/16");
+            document.write("<li><strong>new Date(\"2018/04/16\")</strong> = "+d+"<br>&nbsp;</li>");
+            d = new Date(2018, 3, 16);
+            document.write("<li><strong>new Date(2018, 3, 16)</strong> = "+d+"<br>&nbsp;</li>");
+            d = new Date(2018, 3, 16, 6, 8, 34, 23);
+            document.write("<li><strong>new Date(2018, 3, 16, 6, 8, 34, 23)</strong> = "+d+"<br>&nbsp;</li>");
+            
+            var timestamp = Date.parse(new Date());
+            d = new Date(timestamp);
+            document.write("<li><strong>new Date("+timestamp+")</strong> = "+d+"<br>&nbsp;</li>");
+
+
+            setTimeout(myFunction, 2000); // myFunction sera exécutée au bout de 2 secondes
+
+
+            setTimeout(function() {
+                // Code…
+            }, 2000);
+
+            
+            
+        </script>
+    	</ul>
+    </body>
+</html>
